@@ -1,70 +1,80 @@
-import LocationMarkSVG from './svg/LocationMarkSVG'
-import PhoneSVG from './svg/PhoneSVG'
-import InputForm from './forms/InputForm'
-import Button from './Button'
-import FacebookSVG from './svg/FacebookSVG'
-import YoutubeSVG from  './svg/YoutubeSVG'
-import WhatsappSVG from './svg/WhatsappSVG'
-import InstagramSVG from './svg/InstagramSVG'
-import './ContactInfo.sass'
+import { MapPin, Phone, Instagram, Facebook, Youtube } from "react-feather";
+import { Whatsapp } from "./Icons";
+import { ButtonOutline } from "./Button";
+import InputForm from "./forms/InputForm";
 
 const ContactInfo = () => {
     return (
-        <div className='contact'>
+        <div className="mt-16 mx-auto w-full">
             <div>
-                <h1 className="contact-header">
+                <h1 className="font-serif font-bold text-4xl mb-12">
                     Наши контакты
                 </h1>
             </div>
 
-            <div className="contact-container">
-                <div className="contact-info-container">
-                    <div className="contact-info">
-                        <div className="contact-info-icon">
-                            <LocationMarkSVG width="48px" height="48px" color="#000"/>
+            <div className="flex justify-between max-md:flex-col">
+                <div className="pt-12  max-md:flex max-md:justify-between">
+                    <div>
+                        <div className="text-lg font-bold mb-3 flex">
+                            <MapPin />
+                            <span className="flex flex-col justify-center">
+                                г.Москва, ул.Ленина - 8
+                            </span>
                         </div>
-                        <span className="contact-info-text">
-                            г.Москва, ул.Ленина - 8
-                        </span>
+                        <div className="text-lg font-bold mb-3 flex">
+                            <Phone />
+                            <span className="flex flex-col justify-center">
+                                +7 (999) - 999 - 99 - 99
+                            </span>
+                        </div>
                     </div>
-                    <div className="contact-info">
-                        <PhoneSVG width="48px" height="48px" color="#000" />
-                        <span className="contact-info-text">
-                            +7 (999) - 999 - 99 - 99
-                        </span>
-                    </div>
-                    <div className="contact-info-social">
-                        <FacebookSVG width={"64px"} height={"64px"} color={"#fff"}/>
-                        <InstagramSVG width={"64px"} height={"64px"} color={"#fff"}/>
-                        <WhatsappSVG width={"64px"} height={"64px"} color={"#fff"}/>
-                        <YoutubeSVG width={"64px"} height={"64px"} color={"#fff"} color2={"#000"}/>
+                    <div className="flex justify-between max-md:flex-col">
+                        <Facebook
+                            width={"32px"}
+                            height={"32px"}
+                            color={"#000"}
+                        />
+                        <Instagram
+                            width={"32px"}
+                            height={"32px"}
+                            color={"#000"}
+                        />
+                        <Whatsapp size={"32px"} />
+                        <Youtube
+                            width={"32px"}
+                            height={"32px"}
+                            color={"#000"}
+                        />
                     </div>
                 </div>
 
-                <div className="contact-form">
+                <div className="border border-black m-auto p-8">
                     <div>
-                        <h3 className="contact-form-header">
+                        <h3 className="text-2xl font-bold mb-3">
                             Остались вопросы?
                         </h3>
-                        <p className="contact-form-subheader">
+                        <p className="mb-4">
                             Оставьте заявку и наш менеджер <br /> вам перезвонит
                         </p>
                     </div>
                     <div>
-                        <div className='contact-form-input'>
-                            <InputForm placeholder={'+7(___)-___-__-__'}/>
+                        <div className="mb-5 border-b border-black ">
+                            <InputForm placeholder={"+7(___)-___-__-__"} />
                         </div>
-                        <div className='contact-form-input'>
-                            <InputForm placeholder={'Ваше имя'}/>
+                        <div className="mb-5 border-b border-black">
+                            <InputForm placeholder={"Ваше имя"} />
                         </div>
-                        <div className='contact-form-button'>
-                            <Button text={"Заказать звонок"} isOutline={ false } />
+                        <div className="flex justify-center">
+                            <ButtonOutline
+                                text={"Заказать звонок"}
+                                isOutline={false}
+                            />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ContactInfo
+export default ContactInfo;

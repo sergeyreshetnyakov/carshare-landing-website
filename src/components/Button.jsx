@@ -1,24 +1,15 @@
-import './Button.sass'
+export const ButtonOutline = ({ text }) => {
+    return (
+        <div className="inline-block py-4 px-5 duration-300 ease-out font-bold border-2 border-black hover:bg-black hover:text-white">
+            <a href="#">{text}</a>
+        </div>
+    );
+};
 
-const Button = ({text, isOutline}) => {
-    return ( < > {
-        isOutline
-            ?
-            //Outline button
-            (
-                <div className='button button-outline'>
-                    <a href="#">{text}</a>
-                </div>
-            )
-            :
-            //Default button
-            (
-                <div className="button button-default">
-                    <a href="#">{text}</a>
-                </div>
-            )
-    } </ >
-    )
-}
-
-export default Button
+export const ButtonInline = ({ text }) => {
+    return (
+        <div className="inline-block py-4 px-5 duration-300 ease-out font-bold bg-black text-white hover:bg-red-600">
+            <a href="#">{text}</a>
+        </div>
+    );
+};

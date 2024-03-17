@@ -1,10 +1,7 @@
-import './InputForm.sass'
-
-const InputForm = ({placeholder}) => {
+const InputForm = ({ placeholder }) => {
     return (
-        <div>
-            <input type="text" placeholder={placeholder}/>
-        </div>
-    )
-}
-export default InputForm
+        <input className="outline-none" type="text" placeholder={placeholder} />
+    );
+};
+
+export default InputForm;

@@ -3,18 +3,17 @@ import Header from "./components/Header"
 import CarBook from "./components/carBook/CarBook"
 import ContactInfo from "./components/ContactInfo"
 import Footer  from "./components/Footer"
-import "./App.sass"
 
 const App = () => {
   return (
-    <div className="app">
-      <div className="app-content">
+    <div className="flex w-full flex-col">
+      <div className="mx-[20%] max-2xl:mx-[15%]">
         <Navbar />
         <Header />
         <CarBook />
         <ContactInfo />
       </div>
-      <div className="app-footer">
+      <div>
         <Footer />
       </div>
     </div>

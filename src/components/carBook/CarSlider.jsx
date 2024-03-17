@@ -1,34 +1,34 @@
-import ArrowSVG from "../svg/ArrowSVG";
-import cars from "../data/cars";
-import { useSelector, useDispatch } from "react-redux";
 import { next, previous, selectSlide } from "../features/carSlider/sliderSlice";
-import "./CarSlider.sass";
+import { useSelector, useDispatch } from "react-redux";
+import { ArrowLeft, ArrowRight } from "react-feather";
+import cars from "../data/cars";
 
 const CarSlider = () => {
     const slide = useSelector(selectSlide);
     const dispatch = useDispatch();
 
     return (
-        <div className="slider">
-            <div className="slider-image">
-                <img src={cars[slide].url} alt="" />
-            </div>
-
-            <div className="slider-indicators">
+        <div className="flex flex-col justify-center mx-auto my-8 w-96">
+            <img
+                className="transform -scale-x-100 h-[25vh] min-w-[25vw] "
+                src={cars[slide].url}
+                alt=""
+            />
+            <div className="flex justify-between mt-8">
                 <button
                     onClick={() => {
                         dispatch(next());
                     }}
                 >
-                    <ArrowSVG width={"6rem"} height={"4rem"} isLeft={true} />
+                    <ArrowLeft />
                 </button>
-                <h2 className="slider-indicators-name">{cars[slide].name}</h2>
+                <h2 className="my-auto font-bold">{cars[slide].name}</h2>
                 <button
                     onClick={() => {
                         dispatch(previous());
                     }}
                 >
-                    <ArrowSVG width={"6rem"} height={"4rem"} />
+                    <ArrowRight />
                 </button>
             </div>
         </div>

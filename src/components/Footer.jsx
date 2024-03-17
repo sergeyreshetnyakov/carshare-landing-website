@@ -1,10 +1,7 @@
-import './Footer.sass'
-
 const Footer = () => {
     return(
-        <footer className='footer'>
-            <h1 className='footer-header'>Сайт-лендинг для каршеринга</h1>
-            <h2 className='footer-author'>Создал Сергей Решетняков</h2>
+        <footer className='flex justify-center h-5 py-2 mt-8'>
+            <h3>made by <a className="font-bold underline underline-offset-2" href="#">Sergey Reshetnyakov</a></h3>
         </footer>
     )
 }
