@@ -8,7 +8,7 @@ const ContactInfo = () => {
         <div className="mt-16 mx-auto w-full">
             <div>
                 <h1 className="font-serif font-bold text-4xl mb-12">
-                    Наши контакты
+                    Contact
                 </h1>
             </div>
 
@@ -18,7 +18,7 @@ const ContactInfo = () => {
                         <div className="text-lg font-bold mb-3 flex">
                             <MapPin />
                             <span className="flex flex-col justify-center">
-                                г.Москва, ул.Ленина - 8
+                                Moscow, st.Lenin, 8
                             </span>
                         </div>
                         <div className="text-lg font-bold mb-3 flex">
@@ -51,10 +51,10 @@ const ContactInfo = () => {
                 <div className="border border-black m-auto p-8">
                     <div>
                         <h3 className="text-2xl font-bold mb-3">
-                            Остались вопросы?
+                            Have questions?
                         </h3>
                         <p className="mb-4">
-                            Оставьте заявку и наш менеджер <br /> вам перезвонит
+                            Bring request to manager
                         </p>
                     </div>
                     <div>
@@ -62,11 +62,11 @@ const ContactInfo = () => {
                             <InputForm placeholder={"+7(___)-___-__-__"} />
                         </div>
                         <div className="mb-5 border-b border-black">
-                            <InputForm placeholder={"Ваше имя"} />
+                            <InputForm placeholder={"Name"} />
                         </div>
                         <div className="flex justify-center">
                             <ButtonOutline
-                                text={"Заказать звонок"}
+                                text={"Leave a request"}
                                 isOutline={false}
                             />
                         </div>

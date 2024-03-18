@@ -1,15 +1,15 @@
 const tariffs = [
     {
-        name: "Тариф \"Минута\" ",
-        cost: "от 8 руб/минуту",
+        name: "Tariff \"Minute\" ",
+        cost: "from 0,1$/minute",
     }, 
     {
-        name: "Тариф \"Час\" ",
-        cost: "от 350 руб/минуту",
+        name: "Tariff \"Hour\" ",
+        cost: "from 5$/hour",
     },
     {
-        name: "Тариф \"Сутки\" ",
-        cost: "от 2200 руб/cутки"
+        name: "Tariiff \"Day\" ",
+        cost: "from 25$/Day"
     },
 ]
 

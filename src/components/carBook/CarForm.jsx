@@ -10,7 +10,7 @@ const CarForm = () => {
                 <div className="my-3">
                     <div>
                         <h3 className="font-sans font-bold text-xl mb-2">
-                            Автомобили
+                            Auto
                         </h3>
                     </div>
                     <div>
@@ -18,7 +18,7 @@ const CarForm = () => {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <ButtonOutline text={"Забронировать"} />
+                    <ButtonOutline text={"Book"} />
                 </div>
             </div>
 
@@ -26,7 +26,7 @@ const CarForm = () => {
                 <div className="my-3">
                     <div>
                         <h3 className="font-sans font-bold text-xl mb-2">
-                            Тарифы
+                            Tariffs
                         </h3>
                     </div>
                     <div>
@@ -35,7 +35,7 @@ const CarForm = () => {
                 </div>
                 <div className="flex justify-center">
                     <ButtonInline
-                        text={"Подробнее о тарифах"}
+                        text={"About"}
                         isOutline={true}
                     />
                 </div>

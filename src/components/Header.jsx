@@ -3,21 +3,21 @@ import { ButtonOutline } from "./Button";
 const Header = () => {
     return (
         <header className="flex flex-col mt-16">
-            <h1 className="font-serif text-2xl">Каршеринг в Москве</h1>
+            <h1 className="font-serif text-2xl">Carshare service</h1>
             <div>
                 <span className="font-serif text-5xl font-extrabold">
-                    Почувствуй себя владельцем
+                    feel like the owner of
                     <br />
-                    премиального авто
+                    a premium auto
                 </span>
                 <p className="text-xl mt-8 mb-12 ">
-                    DriveTime - сервис по каршерингу в Москве.
+                    DriveTime - carsharing in Moscow
                     <br />
-                    В нашем автопарке более 300 автомобилей
+                    We have 300 autos in our autopark
                     <br />
-                    на любой вкус
+                    for any taste
                 </p>
-                <ButtonOutline text={"Забронировать"} />
+                <ButtonOutline text={"Book"} />
             </div>
         </header>
     );
