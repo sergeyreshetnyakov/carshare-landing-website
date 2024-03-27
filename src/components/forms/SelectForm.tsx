@@ -1,8 +1,16 @@
 import { useState } from "react";
 
-const SelectForm = ({ formList }) => {
-    const [isActive, setIsActive] = useState(false);
-    const [activeElement, setActiveElement] = useState(formList?.[0].name);
+type FormList = {
+    name: string;
+}
+
+type SelectProp = {
+    formList: FormList[]
+}
+
+const SelectForm = ({ formList }: SelectProp) => {
+    const [isActive, setIsActive] = useState<boolean>(false);
+    const [activeElement, setActiveElement] = useState<string>(formList?.[0].name);
 
     return (
         <>

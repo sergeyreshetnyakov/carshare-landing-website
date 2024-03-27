@@ -1,11 +1,11 @@
-import { next, previous, selectSlide } from "../features/carSlider/sliderSlice";
-import { useSelector, useDispatch } from "react-redux";
+import { next, previous } from "../features/carSlider/sliderSlice";
+import { useAppSelector, useAppDispatch } from "../../hook";
 import { ArrowLeft, ArrowRight } from "react-feather";
 import cars from "../data/cars";
 
 const CarSlider = () => {
-    const slide = useSelector(selectSlide);
-    const dispatch = useDispatch();
+    const slide = useAppSelector((state) => state.slider.value);
+    const dispatch = useAppDispatch();
 
     return (
         <div className="flex flex-col justify-center mx-auto my-8 w-96">

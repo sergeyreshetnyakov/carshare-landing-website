@@ -1,4 +1,11 @@
-const tariffs = [
+type tariffData = {
+    name: string;
+    cost: string;
+}
+
+type tariff = tariffData[]
+
+const tariffs: tariff = [
     {
         name: "Tariff \"Minute\" ",
         cost: "from 0,1$/minute",

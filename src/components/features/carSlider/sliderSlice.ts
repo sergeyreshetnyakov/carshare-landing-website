@@ -1,6 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+type State = {
+    value: number;
+}
+
+const initialState: State = {
     value: 0,
 };
 
@@ -18,6 +22,5 @@ export const sliderSlice = createSlice({
 });
 
 export const { next, previous } = sliderSlice.actions;
-export const selectSlide = (state) => state.slider.value;
 
 export default sliderSlice.reducer;

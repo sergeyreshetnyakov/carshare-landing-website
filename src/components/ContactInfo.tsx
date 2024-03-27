@@ -67,7 +67,6 @@ const ContactInfo = () => {
                         <div className="flex justify-center">
                             <ButtonOutline
                                 text={"Leave a request"}
-                                isOutline={false}
                             />
                         </div>
                     </div>

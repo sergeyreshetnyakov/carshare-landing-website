@@ -36,7 +36,6 @@ const CarForm = () => {
                 <div className="flex justify-center">
                     <ButtonInline
                         text={"About"}
-                        isOutline={true}
                     />
                 </div>
             </div>

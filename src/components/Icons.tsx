@@ -1,4 +1,8 @@
-export const Logo = ({ size }) => {
+type IconProps = {
+    size: string;
+}
+
+export const Logo = ({ size }: IconProps): JSX.Element => {
     return (
         <svg
             fill="#000000"
@@ -30,7 +34,7 @@ export const Logo = ({ size }) => {
     );
 };
 
-export const Whatsapp = ({ size }) => {
+export const Whatsapp = ({ size }: IconProps) => {
     return (
         <svg
             className="social"

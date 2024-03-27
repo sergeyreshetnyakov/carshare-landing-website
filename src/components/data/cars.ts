@@ -1,4 +1,11 @@
-const cars = [
+type carData = {
+    name: string;
+    url: string;
+}
+
+type Cars = carData[]
+
+const cars: Cars = [
     {
         name: 'Audi 57 Sportback',
         url: './images/audi.png ',

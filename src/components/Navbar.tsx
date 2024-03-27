@@ -4,7 +4,11 @@ import { Logo } from "./Icons";
 import { Menu, X } from "react-feather";
 import { useState } from "react";
 
-const NavLinks = ({ vertical }) => {
+type NavProps = {
+    vertical: boolean;
+}
+
+const NavLinks = ({ vertical }: NavProps): JSX.Element => {
     return (
         <div
             className={
@@ -38,19 +42,19 @@ const NavLinks = ({ vertical }) => {
                 Contact
             </a>
             <div>
-                <ButtonInline text={"Скачать приложение"} isOutline={true} />
+                <ButtonInline text={"Install App"} />
             </div>
         </div>
     );
 };
 
 const Navbar = () => {
-    const [openMenu, setOpenMenu] = useState(false);
+    const [openMenu, setOpenMenu] = useState<boolean>(false);
 
     return (
         <div className={openMenu ? "flex flex-col justify-between mt-4": "flex justify-between mt-4"}>
             <div className="flex my-auto">
-                <Logo size={36} />
+                <Logo size={"36px"} />
                 <h1 className="align-middle text-3xl font-serif font-black">
                     <span className="text-red-600">Crazy</span>
                     Driver
